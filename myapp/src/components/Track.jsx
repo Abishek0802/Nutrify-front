@@ -62,7 +62,7 @@ export default function Track()
 
                 <div className="search">
 
-                    <input className="search-inp" onChange={searchFood}
+                    <input className="search-inp" onChange={searchFood} onClick={()=>{setFood([])}}
                     type="search" placeholder="Search Food Item"/>
 
                     {

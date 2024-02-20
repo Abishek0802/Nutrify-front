@@ -1,12 +1,23 @@
-*{
-  width: 95%;
+/* Base styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  background-color: #161616;
+  
+ 
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #fff;
 }
 
 .container {
   height: 100vh;
   width: 100%;
   background-color: #161616;
-  color: white;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -18,16 +29,20 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
-  align-items: stretch;
+  align-items: center;
+ padding: 80px;
+
 }
 
 .inp {
-  width: 100%;
+  color: #fff;
+  width: 50%;
   height: 40px;
   border-radius: 5px;
   text-indent: 15px;
   outline: none;
   border: 1px solid gray;
+  font-size: 1rem; /* Use relative font size */
 }
 
 .btn {
@@ -39,6 +54,7 @@
   font-weight: bold;
   border: 1px solid #167ce0;
   cursor: pointer;
+  width: 50%;
 }
 
 .btn:hover {
@@ -86,11 +102,12 @@ a {
   outline: none;
   border-radius: 5px;
   border: 1px solid gray;
-  font-size: 16px;
+  font-size: 1rem;
+  color: #fff;
 }
 
 .search-results {
-  width: 100%;
+  width: 50%;
   padding: 10px;
   background-color: gray;
   margin-top: 10px;
@@ -101,8 +118,10 @@ a {
   width: 100%;
   padding: 20px 0px;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
+  margin-top: 50px;
 }
 
 .food-img {
@@ -149,16 +168,12 @@ a {
   .container {
     padding: 30px;
   }
-  
+
   .inp {
     text-indent: 20px;
   }
 
   .btn {
-    padding: 10px 50px;
-  }
-
-  .search-inp {
-    font-size: 18px;
+    padding: 10px 5
   }
 }
